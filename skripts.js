@@ -17,7 +17,7 @@ const btn  = document.querySelector('button');
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
     const city = document.querySelector('input').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then(response => {return response.json()}).then(data => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then(response => {return response.json()}).then(data => {
     document.getElementById('name').innerText =  data.name;
     document.getElementById('country').innerText =  data.sys.country;
     document.getElementById('deg').innerText =  Math.round(data.main.temp-273)+"°";
@@ -25,7 +25,7 @@ btn.addEventListener('click',(e)=>{
     document.getElementById('icon').src =  `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
     console.log(data);
     
-}).then(document.querySelector('.card').classList.remove('none')).catch(alert('asd'));
+}).then(document.querySelector('.card').classList.remove('none'));
 })
 
 //3f42f0c2fce8618134591d05ef21004a
