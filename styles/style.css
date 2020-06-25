@@ -1,0 +1,165 @@
+body{
+    font-family: 'ABeeZee', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/13H.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    min-width: 70vw;
+    min-height: 80vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 70%;
+    text-align: right;
+    background-image: url(../images/Golden_Fog\,_San_Francisco.jpg);
+    background-size: cover;
+}
+.info_headers{
+    margin:30px;
+}
+.info_header{
+    color: #64dbff;
+    font-size: 40px;
+}
+.info_descr{
+    color: #000000af;
+    line-height: 29px;
+    letter-spacing: 1.71429px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.content{
+    margin:50px 55px;
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.degrees{
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: -7px;
+}
+.time{
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.555556px;
+}
+.date{
+    opacity: 0.85;
+    letter-spacing: -0.5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 5px;
+}
+.nav{
+    margin-top: 30px;
+    padding: 0 30px;
+    display: flex;
+    border-bottom: 2px solid #D6E6F1;
+}
+.main{
+    width: 40%;
+    text-align: center;
+    color: #9E9E9E;
+}
+.logo img{  
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 127px;
+    height: 105px;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.main_header{
+    font-size: 24px;
+    line-height: 24px;      
+}
+.nav_item{
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 4px solid transparent;
+    transition: .3s;
+}
+.nav_item:hover{
+    border-bottom-color:#B5DDFA;
+}
+.active{
+    color: #000;
+    border-bottom-color:#B5DDFA;
+}
+.wisible{
+    display: block;
+}
+.none{
+    display: none;
+}
+.list_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    margin: 10px 40px;
+    padding: 20px;
+    border-bottom: 1px solid #D6E6F1;
+}
+.getCity{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: #fff;
+    padding: 25px;
+}
+.getCity h1{
+    margin:15px 0;
+    font-size: 30px;
+}
+.getCity input{
+    outline: none;
+    border: none;
+    margin:25px 0;
+    cursor: pointer;
+    border-bottom: 2px solid #D6E6F1;
+    font-size: 16px;
+    padding: 5px;
+}
+.getCity button{
+    outline: none;
+    border: none;
+    margin:5px 0;
+    cursor: pointer;
+    border: 1px solid #9E9E9E;
+    font-size: 16px;
+    padding: 5px;
+}
+.getCity button:active{
+    transform: scale(0.98);
+}
+.cont{
+    display: flex;
+    align-items: center;
+}
+.cont img{
+    width: 40px;
+    height: 40px;
+}
+.listTime{
+    font-size: 20px;
+}

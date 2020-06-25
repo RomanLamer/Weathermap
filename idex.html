@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather Map</title>
+  </head>
+  <body>
+
+    <form class="getCity">
+        <h1>Enter city name</h1>
+        <input type="text" placeholder="City name">
+        <button id="btn">Get Weather</button>
+    </form>
+
+    <div class="card none" id="get">
+      <div class="main">
+          <div class="logo">
+            <img src="./images/Cloudy Skies Icon.png" alt="" />
+            <h1 class="main_header">Partly Cloudy</h1>
+        </div>
+        <nav class="nav">
+            <nav class="nav_item active">Today</nav>
+            <nav class="nav_item">Week</nav>
+        </nav>
+        <div class="lists">
+            <ul class="list wisible" id="Today">
+                <li class="list_item"><p class="listTime">Now</p> <div class="cont"><img src="" id="icon" alt=""> <div class="listDegrees" id="deg">65°</div></div></li>
+                <li class="list_item">qweqwe</li>
+                <li class="list_item">qweqwe</li>
+                <li class="list_item">qweqwe</li>
+                <li class="list_item">qweqwe</li>
+            </ul>
+            <ul class="list none" id="Week">
+                <li class="list_item">1223</li>
+                <li class="list_item">123123</li>
+                <li class="list_item">123123</li>
+                <li class="list_item">323231</li>
+                <li class="list_item">12213</li>
+            </ul>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info_headers">
+          <h1 class="info_header" id='name'>San Fransisco</h1>
+          <p class="info_descr" id="country">CALIFORNIA</p>
+        </div>
+        <div class="content">
+          <div class="content_container">
+            <div class="time">8:43 a.m.</div>
+            <div class="date">Monday, November 16th</div>
+          </div>
+          <div class="degrees" id="deg1">65°</div>
+        </div>
+      </div>
+    </div>
+    <script src="./skripts.js"></script>
+  </body>
+</html>
