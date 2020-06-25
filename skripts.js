@@ -27,3 +27,5 @@ btn.addEventListener('click',(e)=>{
     
 }).then(document.querySelector('.card').classList.remove('none')).catch(alert('asd'));
 })
+
+//3f42f0c2fce8618134591d05ef21004a
