@@ -23,8 +23,6 @@ btn.addEventListener('click',(e)=>{
     document.getElementById('deg').innerText =  Math.round(data.main.temp-273)+"°";
     document.getElementById('deg1').innerText =  Math.round(data.main.temp-273)+"°";
     document.getElementById('icon').src =  `https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png`;
-    console.log(data);
-    
 }).then(document.querySelector('.card').classList.remove('none'));
 })
 
