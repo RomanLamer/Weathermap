@@ -185,6 +185,13 @@ body{
 }
 
 @media (max-width:830px){
+    
+.getCity {
+    border: 1px solid #000;
+    -webkit-box-shadow: 0px 0px 165px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 165px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 165px 0px rgba(0,0,0,0.75);
+}
     body{
         background-image: unset;
         background-color: #fff;
