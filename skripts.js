@@ -112,7 +112,7 @@ btn.addEventListener('click',(e)=>{
         
         }
         document.getElementById('day').innerHTML = `${day},${month} ${new Date().getDate()+cuurentDay}th`;})
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&
+        fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&
     exclude=hourly&appid=${API_KEY}`).then(response =>{return response.json()}).then(content=>{
         console.log(content)
         let myTime;
