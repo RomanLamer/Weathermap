@@ -185,7 +185,9 @@ body{
 }
 
 @media (max-width:830px){
+    
     .content {
+    background-image: url();
     text-align: center;
     flex-direction: column-reverse;
     margin: 0;
@@ -197,6 +199,7 @@ body{
     }
 }
 @media (max-width:630px){
+
     .content{
         margin-right:4vw;
         margin-bottom:4vw;
