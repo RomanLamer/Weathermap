@@ -18,7 +18,7 @@ const btn  = document.querySelector('button');
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
     const city = document.querySelector('input').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then(response => {return response.json()}).then(data => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then(response => {return response.json()}).then(data => {
     document.getElementById('name').innerText =  data.name;
     document.getElementById('country').innerText =  data.sys.country;
     document.getElementById('deg1').innerText =  Math.round(data.main.temp-273)+"°";
@@ -112,7 +112,7 @@ btn.addEventListener('click',(e)=>{
         
         }
         document.getElementById('day').innerHTML = `${day},${month} ${new Date().getDate()+cuurentDay}th`;})
-        fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&
     exclude=hourly&appid=${API_KEY}`).then(response =>{return response.json()}).then(content=>{
         console.log(content)
         let myTime;
